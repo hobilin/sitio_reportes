@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slider</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper">
+        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+        <!-- Slider Pagination -->
+        <div class="slider-pagination">
+            <label for="slider_1" class="page1"></label>
+            <label for="slider_2" class="page2"></label>
+            <label for="slider_3" class="page3"></label>
+        </div>
+        <!-- Slider #1 -->
+        <div class="slider slide-1">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2>¿Cómo vamos?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 d-flex justify-content-center">
+                    <h4>Solicitudes pendientes: <span id="solPend">3</span></h4>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center">
+                    <img src="images/smile.png" id="smiley" style="height:10em; width:auto;" alt="Alternate Text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center align-items-center">
+                    <h4>Tiempo Derivación OS (min)</h4>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 d-flex justify-content-start align-items-start">
+                    <div class="dx-viewport demo-container" style="width:100%; padding:0;">
+                       
+                        <div class="gauge-demo row">
+                            <div class="col-2" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-start">
+                                        <label class="label-control">Meta</label>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-baseline" style="padding-top:0.5em">
+                                        <label  class="label-control">Aquí vamos</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div id="c5"></div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--<div class="number-pagination">
+                <span>1</span>
+            </div>-->
+        </div>
+        <!-- Slider #2 -->
+        <div class="slider slide-2">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2>Incidentes</h2>
+                </div>
+            </div>
+            <div class="row" id="incidentes">
+                <div class="col-12 d-flex justify-content-center">
+                    <h4><span class="faces"><img src="images/shrug.png" style="height:3em; width:auto;" alt="Alternate Text" /></span>Sucursal Concepción Fuera de Línea</h4>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h4><span class="faces"><img src="images/shrug.png" style="height:3em; width:auto;" alt="Alternate Text" /></span>Correo Electrónico Inestable</h4>
+
+                </div>
+            </div>
+
+            <!--<div class="number-pagination">
+              <span>2</span>
+            </div>-->
+        </div>
+        <!-- Slider #3 -->
+        <div class="slider slide-3">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 style="color:#000">Pendientes para el Cierre</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <p>Hora: <span id="horaActual"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h4 style="font-size:4em; color:#000; padding:0.5em 0 0 0;">Solicitudes pendientes</h4>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <h4 style="font-size:18em; color:#000;  padding-top:0;">12</h4>
+                </div>
+                
+            </div>
+            <!--<div class="number-pagination">
+              <span>3</span>
+            </div>-->
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="moment/min/moment.min.js" charset="utf-8"></script>
+    <script src="node_modules/devextreme/dist/js/dx.viz.js" charset="utf-8"></script>
+    <script src="node_modules/devextreme/dist/js/dx.viz-web.js" charset="utf-8"></script>
+    <script src="node_modules/devextreme/dist/js/dx.all.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
